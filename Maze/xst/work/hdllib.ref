@@ -1,0 +1,8 @@
+EN maze_m NULL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" sub00/vhpl00 1749558211
+AR maze_m behavioral "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" sub00/vhpl07 1749558212
+EN image_generator NULL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" sub00/vhpl03 1749558205
+EN maze_sync NULL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" sub00/vhpl05 1749558209
+AR maze_sync behavioral "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" sub00/vhpl06 1749558210
+AR pll behavioral "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" sub00/vhpl02 1749558208
+EN pll NULL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" sub00/vhpl01 1749558207
+AR image_generator behavioral "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" sub00/vhpl04 1749558206

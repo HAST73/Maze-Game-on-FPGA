@@ -1,0 +1,336 @@
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc mapping.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "F:/Maze/Maze_m.xst" -ofn "F:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/Konrad/Desktop/HAHAHHA/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc C:/Users/lab/Downloads/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+xst -intstyle ise -ifn "E:/Maze/Maze_m.xst" -ofn "E:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc E:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+xst -intstyle ise -ifn "H:/Maze/Maze_m.xst" -ofn "H:/Maze/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 Maze_m.ngc Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc H:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -i -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 
+xst -intstyle ise -ifn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.xst" -ofn "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.syr" 
+ngdbuild -intstyle ise -dd _ngo -sd "../PS2_Kbd (5)" -nt timestamp -uc D:/GenIO.ucf -p xc3s500e-fg320-4 "Maze_m.ngc" Maze_m.ngd  
+map -intstyle ise -p xc3s500e-fg320-4 -cm area -ir off -pr off -c 100 -o Maze_m_map.ncd Maze_m.ngd Maze_m.pcf 
+par -w -intstyle ise -ol high -t 1 Maze_m_map.ncd Maze_m.ncd Maze_m.pcf 
+trce -intstyle ise -v 3 -s 4 -n 3 -fastpaths -xml Maze_m.twx Maze_m.ncd -o Maze_m.twr Maze_m.pcf 
+bitgen -intstyle ise -f Maze_m.ut Maze_m.ncd 

@@ -1,0 +1,8 @@
+INTSTYLE=ise
+INFILE=D:\10_06_2025 projekt\Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025\Maze_m.ncd
+OUTFILE=D:\10_06_2025 projekt\Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025\Maze_m.bit
+FAMILY=Spartan3E
+PART=xc3s500e-4fg320
+WORKINGDIR=D:\10_06_2025 projekt\Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025
+LICENSE=ISE
+USER_INFO=174693031_177724690_210785003_704

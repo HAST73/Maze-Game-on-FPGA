@@ -1,0 +1,18 @@
+//! **************************************************************************
+// Written by: Map P.20131013 on Tue Jun 10 14:23:56 2025
+//! **************************************************************************
+
+SCHEMATIC START;
+COMP "CLK" LOCATE = SITE "C9" LEVEL 1;
+COMP "LED0" LOCATE = SITE "F12" LEVEL 1;
+COMP "HSYNC" LOCATE = SITE "F15" LEVEL 1;
+COMP "VSYNC" LOCATE = SITE "F14" LEVEL 1;
+COMP "RED<0>" LOCATE = SITE "H14" LEVEL 1;
+COMP "GREEN<0>" LOCATE = SITE "H15" LEVEL 1;
+COMP "BLUE<0>" LOCATE = SITE "G15" LEVEL 1;
+COMP "PS2_Data" LOCATE = SITE "G13" LEVEL 1;
+COMP "PS2_Clk" LOCATE = SITE "G14" LEVEL 1;
+NET "CLK_IBUFG1" BEL "CLK_IBUFG_BUFG.GCLKMUX" USELOCALCONNECT;
+NET "CLK_IBUFG1" PERIOD = 20 ns HIGH 50%;
+SCHEMATIC END;
+

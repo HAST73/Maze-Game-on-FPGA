@@ -1,0 +1,904 @@
+Release 14.7 - xst P.20131013 (nt64)
+Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
+--> Parameter TMPDIR set to xst/projnav.tmp
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Parameter xsthdpdir set to xst
+
+
+Total REAL time to Xst completion: 0.00 secs
+Total CPU time to Xst completion: 0.09 secs
+ 
+--> Reading design: Maze_m.prj
+
+TABLE OF CONTENTS
+  1) Synthesis Options Summary
+  2) HDL Compilation
+  3) Design Hierarchy Analysis
+  4) HDL Analysis
+  5) HDL Synthesis
+     5.1) HDL Synthesis Report
+  6) Advanced HDL Synthesis
+     6.1) Advanced HDL Synthesis Report
+  7) Low Level Synthesis
+  8) Partition Report
+  9) Final Report
+	9.1) Device utilization summary
+	9.2) Partition Resource Summary
+	9.3) TIMING REPORT
+
+
+=========================================================================
+*                      Synthesis Options Summary                        *
+=========================================================================
+---- Source Parameters
+Input File Name                    : "Maze_m.prj"
+Input Format                       : mixed
+Ignore Synthesis Constraint File   : NO
+
+---- Target Parameters
+Output File Name                   : "Maze_m"
+Output Format                      : NGC
+Target Device                      : xc3s500e-4-fg320
+
+---- Source Options
+Top Module Name                    : Maze_m
+Automatic FSM Extraction           : YES
+FSM Encoding Algorithm             : Auto
+Safe Implementation                : No
+FSM Style                          : LUT
+RAM Extraction                     : Yes
+RAM Style                          : Auto
+ROM Extraction                     : Yes
+Mux Style                          : Auto
+Decoder Extraction                 : YES
+Priority Encoder Extraction        : Yes
+Shift Register Extraction          : YES
+Logical Shifter Extraction         : YES
+XOR Collapsing                     : YES
+ROM Style                          : Auto
+Mux Extraction                     : Yes
+Resource Sharing                   : YES
+Asynchronous To Synchronous        : NO
+Multiplier Style                   : Auto
+Automatic Register Balancing       : No
+
+---- Target Options
+Add IO Buffers                     : YES
+Global Maximum Fanout              : 100000
+Add Generic Clock Buffer(BUFG)     : 24
+Register Duplication               : YES
+Slice Packing                      : YES
+Optimize Instantiated Primitives   : NO
+Use Clock Enable                   : Yes
+Use Synchronous Set                : Yes
+Use Synchronous Reset              : Yes
+Pack IO Registers into IOBs        : Auto
+Equivalent register Removal        : YES
+
+---- General Options
+Optimization Goal                  : Speed
+Optimization Effort                : 1
+Keep Hierarchy                     : No
+Netlist Hierarchy                  : As_Optimized
+RTL Output                         : Yes
+Global Optimization                : AllClockNets
+Read Cores                         : YES
+Write Timing Constraints           : NO
+Cross Clock Analysis               : NO
+Hierarchy Separator                : /
+Bus Delimiter                      : <>
+Case Specifier                     : Maintain
+Slice Utilization Ratio            : 100
+BRAM Utilization Ratio             : 100
+Verilog 2001                       : YES
+Auto BRAM Packing                  : NO
+Slice Utilization Ratio Delta      : 5
+
+---- Other Options
+Cores Search Directories           : {"../PS2_Kbd (5)"  }
+
+=========================================================================
+
+
+=========================================================================
+*                          HDL Compilation                              *
+=========================================================================
+Compiling vhdl file "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" in Library work.
+Entity <image_generator> compiled.
+Entity <image_generator> (Architecture <behavioral>) compiled.
+Compiling vhdl file "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" in Library work.
+Architecture behavioral of Entity pll is up to date.
+Compiling vhdl file "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" in Library work.
+Architecture behavioral of Entity maze_sync is up to date.
+Compiling vhdl file "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" in Library work.
+Architecture behavioral of Entity maze_m is up to date.
+
+=========================================================================
+*                     Design Hierarchy Analysis                         *
+=========================================================================
+Analyzing hierarchy for entity <Maze_m> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <pll> in library <work> (architecture <behavioral>).
+
+Analyzing hierarchy for entity <Maze_sync> in library <work> (architecture <Behavioral>).
+
+Analyzing hierarchy for entity <Image_Generator> in library <work> (architecture <Behavioral>).
+
+
+=========================================================================
+*                            HDL Analysis                               *
+=========================================================================
+Analyzing Entity <Maze_m> in library <work> (Architecture <behavioral>).
+    Set user-defined property "KEEP =  true" for signal <LOCKED>.
+WARNING:Xst:753 - "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" line 82: Unconnected output port 'LED0' of component 'Maze_sync'.
+WARNING:Xst:753 - "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" line 98: Unconnected output port 'E0' of component 'PS2_Kbd'.
+WARNING:Xst:753 - "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" line 98: Unconnected output port 'F0' of component 'PS2_Kbd'.
+WARNING:Xst:2211 - "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" line 98: Instantiating black box module <PS2_Kbd>.
+Entity <Maze_m> analyzed. Unit <Maze_m> generated.
+
+Analyzing Entity <pll> in library <work> (Architecture <behavioral>).
+    Set user-defined property "CLKDV_DIVIDE =  2.0000000000000000" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLKFX_DIVIDE =  8" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLKFX_MULTIPLY =  4" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLKIN_DIVIDE_BY_2 =  FALSE" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLKIN_PERIOD =  20.0000000000000000" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLKOUT_PHASE_SHIFT =  NONE" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "CLK_FEEDBACK =  1X" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "DESKEW_ADJUST =  SYSTEM_SYNCHRONOUS" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "DFS_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "DLL_FREQUENCY_MODE =  LOW" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "DSS_MODE =  NONE" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "DUTY_CYCLE_CORRECTION =  TRUE" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "FACTORY_JF =  C080" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "PHASE_SHIFT =  0" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "SIM_MODE =  SAFE" for instance <DCM_inst> in unit <pll>.
+    Set user-defined property "STARTUP_WAIT =  FALSE" for instance <DCM_inst> in unit <pll>.
+Entity <pll> analyzed. Unit <pll> generated.
+
+Analyzing Entity <Maze_sync> in library <work> (Architecture <Behavioral>).
+Entity <Maze_sync> analyzed. Unit <Maze_sync> generated.
+
+Analyzing Entity <Image_Generator> in library <work> (Architecture <Behavioral>).
+Entity <Image_Generator> analyzed. Unit <Image_Generator> generated.
+
+
+=========================================================================
+*                           HDL Synthesis                               *
+=========================================================================
+
+Performing bidirectional port resolution...
+
+Synthesizing Unit <Image_Generator>.
+    Related source file is "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd".
+    Found 32-bit adder for signal <BLUE_0$add0002> created at line 126.
+    Found 32-bit adder for signal <BLUE_0$add0003> created at line 126.
+    Found 32-bit comparator greatequal for signal <BLUE_0$cmp_ge0000> created at line 126.
+    Found 32-bit comparator greatequal for signal <BLUE_0$cmp_ge0001> created at line 126.
+    Found 32-bit comparator greatequal for signal <BLUE_0$cmp_ge0002> created at line 129.
+    Found 32-bit comparator greatequal for signal <BLUE_0$cmp_ge0003> created at line 129.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0000> created at line 124.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0001> created at line 124.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0002> created at line 126.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0003> created at line 126.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0004> created at line 129.
+    Found 32-bit comparator less for signal <BLUE_0$cmp_lt0005> created at line 129.
+    Found 1-bit register for signal <goal_reached<0>>.
+    Found 32-bit comparator greater for signal <goal_reached_0$cmp_gt0000> created at line 177.
+    Found 32-bit comparator greater for signal <goal_reached_0$cmp_gt0001> created at line 177.
+    Found 32-bit comparator less for signal <goal_reached_0$cmp_lt0000> created at line 177.
+    Found 32-bit comparator less for signal <goal_reached_0$cmp_lt0001> created at line 177.
+    Found 32-bit up counter for signal <move_counter>.
+    Found 32-bit comparator less for signal <move_counter$cmp_lt0000> created at line 146.
+    Found 32-bit register for signal <pos_x>.
+    Found 32-bit adder for signal <pos_x$addsub0000> created at line 169.
+    Found 32-bit comparator greater for signal <pos_x$cmp_gt0000> created at line 163.
+    Found 32-bit comparator less for signal <pos_x$cmp_lt0000> created at line 168.
+    Found 32-bit register for signal <pos_y>.
+    Found 32-bit adder for signal <pos_y$addsub0000> created at line 159.
+    Found 32-bit comparator greater for signal <pos_y$cmp_gt0000> created at line 153.
+    Found 32-bit comparator less for signal <pos_y$cmp_lt0000> created at line 158.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0001> created at line 111.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0002> created at line 107.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0003> created at line 107.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0004> created at line 103.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0005> created at line 103.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0006> created at line 95.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0007> created at line 95.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0008> created at line 91.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0009> created at line 91.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0010> created at line 87.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0011> created at line 87.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0012> created at line 83.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0013> created at line 78.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0014> created at line 74.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0015> created at line 74.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0016> created at line 70.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0017> created at line 70.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0018> created at line 66.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0019> created at line 62.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0020> created at line 58.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0021> created at line 58.
+    Found 32-bit comparator greatequal for signal <result$cmp_ge0022> created at line 50.
+    Found 32-bit comparator greater for signal <result$cmp_gt0000> created at line 41.
+    Found 32-bit comparator greater for signal <result$cmp_gt0001> created at line 41.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0001> created at line 111.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0002> created at line 107.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0003> created at line 107.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0004> created at line 103.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0005> created at line 103.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0006> created at line 99.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0007> created at line 95.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0008> created at line 95.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0009> created at line 91.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0010> created at line 91.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0011> created at line 87.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0012> created at line 87.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0013> created at line 83.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0014> created at line 78.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0015> created at line 78.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0016> created at line 74.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0017> created at line 74.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0018> created at line 70.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0019> created at line 70.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0020> created at line 62.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0021> created at line 58.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0022> created at line 58.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0023> created at line 54.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0024> created at line 50.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0025> created at line 46.
+    Found 32-bit comparator lessequal for signal <result$cmp_le0026> created at line 46.
+    Found 32-bit comparator less for signal <result$cmp_lt0000> created at line 41.
+    Found 32-bit comparator less for signal <result$cmp_lt0001> created at line 41.
+    Found 32-bit subtractor for signal <result1$addsub0000> created at line 153.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0001> created at line 111.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0002> created at line 107.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0003> created at line 107.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0004> created at line 103.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0005> created at line 103.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0006> created at line 95.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0007> created at line 95.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0008> created at line 91.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0009> created at line 91.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0010> created at line 87.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0011> created at line 87.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0012> created at line 83.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0013> created at line 78.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0014> created at line 74.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0015> created at line 74.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0016> created at line 70.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0017> created at line 70.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0018> created at line 66.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0019> created at line 62.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0020> created at line 58.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0021> created at line 58.
+    Found 32-bit comparator greatequal for signal <result1$cmp_ge0022> created at line 50.
+    Found 32-bit comparator greater for signal <result1$cmp_gt0000> created at line 41.
+    Found 32-bit comparator greater for signal <result1$cmp_gt0001> created at line 41.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0001> created at line 111.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0002> created at line 107.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0003> created at line 107.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0004> created at line 103.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0005> created at line 103.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0006> created at line 99.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0007> created at line 95.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0008> created at line 95.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0009> created at line 91.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0010> created at line 91.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0011> created at line 87.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0012> created at line 87.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0013> created at line 83.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0014> created at line 78.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0015> created at line 78.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0016> created at line 74.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0017> created at line 74.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0018> created at line 70.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0019> created at line 70.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0020> created at line 62.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0021> created at line 58.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0022> created at line 58.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0023> created at line 54.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0024> created at line 50.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0025> created at line 46.
+    Found 32-bit comparator lessequal for signal <result1$cmp_le0026> created at line 46.
+    Found 32-bit comparator less for signal <result1$cmp_lt0000> created at line 41.
+    Found 32-bit comparator less for signal <result1$cmp_lt0001> created at line 41.
+    Found 32-bit subtractor for signal <result1$sub0000> created at line 153.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0001> created at line 107.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0002> created at line 103.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0003> created at line 95.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0004> created at line 91.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0005> created at line 87.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0006> created at line 83.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0007> created at line 74.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0008> created at line 70.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0009> created at line 62.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0010> created at line 58.
+    Found 32-bit comparator greatequal for signal <result2$cmp_ge0011> created at line 50.
+    Found 32-bit comparator greater for signal <result2$cmp_gt0000> created at line 41.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0001> created at line 107.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0002> created at line 103.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0003> created at line 99.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0004> created at line 95.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0005> created at line 91.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0006> created at line 87.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0007> created at line 83.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0008> created at line 78.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0009> created at line 74.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0010> created at line 70.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0011> created at line 58.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0012> created at line 54.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0013> created at line 50.
+    Found 32-bit comparator lessequal for signal <result2$cmp_le0014> created at line 46.
+    Found 32-bit comparator less for signal <result2$cmp_lt0000> created at line 41.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0001> created at line 111.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0002> created at line 107.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0003> created at line 107.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0004> created at line 103.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0005> created at line 103.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0006> created at line 95.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0007> created at line 95.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0008> created at line 91.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0009> created at line 91.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0010> created at line 87.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0011> created at line 87.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0012> created at line 83.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0013> created at line 78.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0014> created at line 74.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0015> created at line 74.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0016> created at line 70.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0017> created at line 70.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0018> created at line 66.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0019> created at line 62.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0020> created at line 58.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0021> created at line 58.
+    Found 32-bit comparator greatequal for signal <result3$cmp_ge0022> created at line 50.
+    Found 32-bit comparator greater for signal <result3$cmp_gt0000> created at line 41.
+    Found 32-bit comparator greater for signal <result3$cmp_gt0001> created at line 41.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0001> created at line 111.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0002> created at line 107.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0003> created at line 107.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0004> created at line 103.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0005> created at line 103.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0006> created at line 99.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0007> created at line 95.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0008> created at line 95.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0009> created at line 91.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0010> created at line 91.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0011> created at line 87.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0012> created at line 87.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0013> created at line 83.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0014> created at line 78.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0015> created at line 78.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0016> created at line 74.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0017> created at line 74.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0018> created at line 70.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0019> created at line 70.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0020> created at line 62.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0021> created at line 58.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0022> created at line 58.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0023> created at line 54.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0024> created at line 50.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0025> created at line 46.
+    Found 32-bit comparator lessequal for signal <result3$cmp_le0026> created at line 46.
+    Found 32-bit comparator less for signal <result3$cmp_lt0000> created at line 41.
+    Found 32-bit comparator less for signal <result3$cmp_lt0001> created at line 41.
+    Found 32-bit subtractor for signal <result3$sub0000> created at line 158.
+    Found 32-bit subtractor for signal <result5$addsub0000> created at line 163.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0001> created at line 111.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0002> created at line 107.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0003> created at line 107.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0004> created at line 103.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0005> created at line 103.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0006> created at line 95.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0007> created at line 95.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0008> created at line 91.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0009> created at line 91.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0010> created at line 87.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0011> created at line 87.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0012> created at line 83.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0013> created at line 78.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0014> created at line 74.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0015> created at line 74.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0016> created at line 70.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0017> created at line 70.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0018> created at line 66.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0019> created at line 62.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0020> created at line 58.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0021> created at line 58.
+    Found 32-bit comparator greatequal for signal <result5$cmp_ge0022> created at line 50.
+    Found 32-bit comparator greater for signal <result5$cmp_gt0000> created at line 41.
+    Found 32-bit comparator greater for signal <result5$cmp_gt0001> created at line 41.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0001> created at line 111.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0002> created at line 107.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0003> created at line 107.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0004> created at line 103.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0005> created at line 103.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0006> created at line 99.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0007> created at line 95.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0008> created at line 95.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0009> created at line 91.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0010> created at line 91.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0011> created at line 87.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0012> created at line 87.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0013> created at line 83.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0014> created at line 78.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0015> created at line 78.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0016> created at line 74.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0017> created at line 74.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0018> created at line 70.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0019> created at line 70.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0020> created at line 62.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0021> created at line 58.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0022> created at line 58.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0023> created at line 54.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0024> created at line 50.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0025> created at line 46.
+    Found 32-bit comparator lessequal for signal <result5$cmp_le0026> created at line 46.
+    Found 32-bit comparator less for signal <result5$cmp_lt0000> created at line 41.
+    Found 32-bit comparator less for signal <result5$cmp_lt0001> created at line 41.
+    Found 32-bit subtractor for signal <result5$sub0000> created at line 163.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0001> created at line 107.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0002> created at line 103.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0003> created at line 95.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0004> created at line 91.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0005> created at line 87.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0006> created at line 78.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0007> created at line 74.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0008> created at line 70.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0009> created at line 66.
+    Found 32-bit comparator greatequal for signal <result6$cmp_ge0010> created at line 58.
+    Found 32-bit comparator greater for signal <result6$cmp_gt0000> created at line 41.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0001> created at line 107.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0002> created at line 103.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0003> created at line 95.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0004> created at line 91.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0005> created at line 87.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0006> created at line 78.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0007> created at line 74.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0008> created at line 70.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0009> created at line 62.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0010> created at line 58.
+    Found 32-bit comparator lessequal for signal <result6$cmp_le0011> created at line 46.
+    Found 32-bit comparator less for signal <result6$cmp_lt0000> created at line 41.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0000> created at line 111.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0001> created at line 111.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0002> created at line 107.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0003> created at line 107.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0004> created at line 103.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0005> created at line 103.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0006> created at line 95.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0007> created at line 95.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0008> created at line 91.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0009> created at line 91.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0010> created at line 87.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0011> created at line 87.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0012> created at line 83.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0013> created at line 78.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0014> created at line 74.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0015> created at line 74.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0016> created at line 70.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0017> created at line 70.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0018> created at line 66.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0019> created at line 62.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0020> created at line 58.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0021> created at line 58.
+    Found 32-bit comparator greatequal for signal <result7$cmp_ge0022> created at line 50.
+    Found 32-bit comparator greater for signal <result7$cmp_gt0000> created at line 41.
+    Found 32-bit comparator greater for signal <result7$cmp_gt0001> created at line 41.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0000> created at line 111.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0001> created at line 111.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0002> created at line 107.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0003> created at line 107.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0004> created at line 103.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0005> created at line 103.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0006> created at line 99.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0007> created at line 95.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0008> created at line 95.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0009> created at line 91.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0010> created at line 91.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0011> created at line 87.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0012> created at line 87.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0013> created at line 83.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0014> created at line 78.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0015> created at line 78.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0016> created at line 74.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0017> created at line 74.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0018> created at line 70.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0019> created at line 70.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0020> created at line 62.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0021> created at line 58.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0022> created at line 58.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0023> created at line 54.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0024> created at line 50.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0025> created at line 46.
+    Found 32-bit comparator lessequal for signal <result7$cmp_le0026> created at line 46.
+    Found 32-bit comparator less for signal <result7$cmp_lt0000> created at line 41.
+    Found 32-bit comparator less for signal <result7$cmp_lt0001> created at line 41.
+    Found 32-bit subtractor for signal <result7$sub0000> created at line 168.
+    Summary:
+	inferred   1 Counter(s).
+	inferred  65 D-type flip-flop(s).
+	inferred  10 Adder/Subtractor(s).
+	inferred 343 Comparator(s).
+Unit <Image_Generator> synthesized.
+
+
+Synthesizing Unit <pll>.
+    Related source file is "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd".
+Unit <pll> synthesized.
+
+
+Synthesizing Unit <Maze_sync>.
+    Related source file is "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd".
+    Found 11-bit up counter for signal <h_count>.
+    Found 11-bit comparator greatequal for signal <HSYNC$cmp_ge0000> created at line 76.
+    Found 11-bit comparator less for signal <HSYNC$cmp_lt0000> created at line 76.
+    Found 11-bit up counter for signal <v_count>.
+    Found 11-bit comparator greatequal for signal <VSYNC$cmp_ge0000> created at line 77.
+    Found 11-bit comparator less for signal <VSYNC$cmp_lt0000> created at line 77.
+    Summary:
+	inferred   2 Counter(s).
+	inferred   4 Comparator(s).
+Unit <Maze_sync> synthesized.
+
+
+Synthesizing Unit <Maze_m>.
+    Related source file is "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd".
+Unit <Maze_m> synthesized.
+
+
+=========================================================================
+HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 6
+# Counters                                             : 3
+ 11-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Registers                                            : 3
+ 1-bit register                                        : 1
+ 32-bit register                                       : 2
+# Comparators                                          : 347
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 2
+ 32-bit comparator greatequal                          : 142
+ 32-bit comparator greater                             : 16
+ 32-bit comparator less                                : 23
+ 32-bit comparator lessequal                           : 162
+
+=========================================================================
+
+=========================================================================
+*                       Advanced HDL Synthesis                          *
+=========================================================================
+
+Reading core <../PS2_Kbd (5)/PS2_Kbd.ngc>.
+Loading core <PS2_Kbd> for timing and area information for instance <U_KBD>.
+WARNING:Xst:1426 - The value init of the FF/Latch goal_reached_0 hinder the constant cleaning in the block U1.
+   You should achieve better results by setting this init to 1.
+
+=========================================================================
+Advanced HDL Synthesis Report
+
+Macro Statistics
+# Adders/Subtractors                                   : 10
+ 32-bit adder                                          : 4
+ 32-bit subtractor                                     : 6
+# Counters                                             : 3
+ 11-bit up counter                                     : 2
+ 32-bit up counter                                     : 1
+# Registers                                            : 65
+ Flip-Flops                                            : 65
+# Comparators                                          : 347
+ 11-bit comparator greatequal                          : 2
+ 11-bit comparator less                                : 2
+ 32-bit comparator greatequal                          : 142
+ 32-bit comparator greater                             : 16
+ 32-bit comparator less                                : 23
+ 32-bit comparator lessequal                           : 162
+
+=========================================================================
+
+=========================================================================
+*                         Low Level Synthesis                           *
+=========================================================================
+WARNING:Xst:1426 - The value init of the FF/Latch goal_reached_0 hinder the constant cleaning in the block Image_Generator.
+   You should achieve better results by setting this init to 1.
+INFO:Xst:1901 - Instance pixel_clock/DCM_inst in unit Maze_m of type DCM has been replaced by DCM_SP
+
+Optimizing unit <Maze_m> ...
+
+Optimizing unit <Image_Generator> ...
+
+Optimizing unit <Maze_sync> ...
+
+Mapping all equations...
+Building and optimizing final netlist ...
+Found area constraint ratio of 100 (+ 5) on block Maze_m, actual ratio is 44.
+
+Final Macro Processing ...
+
+=========================================================================
+Final Register Report
+
+Macro Statistics
+# Registers                                            : 119
+ Flip-Flops                                            : 119
+
+=========================================================================
+
+=========================================================================
+*                           Partition Report                            *
+=========================================================================
+
+Partition Implementation Status
+-------------------------------
+
+  No Partitions were found in this design.
+
+-------------------------------
+
+=========================================================================
+*                            Final Report                               *
+=========================================================================
+Final Results
+RTL Top Level Output File Name     : Maze_m.ngr
+Top Level Output File Name         : Maze_m
+Output Format                      : NGC
+Optimization Goal                  : Speed
+Keep Hierarchy                     : No
+
+Design Statistics
+# IOs                              : 9
+
+Cell Usage :
+# BELS                             : 7739
+#      GND                         : 2
+#      INV                         : 772
+#      LUT1                        : 511
+#      LUT2                        : 447
+#      LUT2_L                      : 2
+#      LUT3                        : 270
+#      LUT3_D                      : 2
+#      LUT4                        : 1773
+#      LUT4_D                      : 5
+#      LUT4_L                      : 63
+#      MUXCY                       : 3502
+#      MUXF5                       : 6
+#      VCC                         : 2
+#      XORCY                       : 382
+# FlipFlops/Latches                : 156
+#      FD                          : 11
+#      FDE                         : 81
+#      FDR                         : 12
+#      FDRE                        : 52
+# Clock Buffers                    : 3
+#      BUFG                        : 3
+# IO Buffers                       : 9
+#      IBUF                        : 2
+#      IBUFG                       : 1
+#      OBUF                        : 6
+# DCMs                             : 1
+#      DCM_SP                      : 1
+=========================================================================
+
+Device utilization summary:
+---------------------------
+
+Selected Device : 3s500efg320-4 
+
+ Number of Slices:                     2019  out of   4656    43%  
+ Number of Slice Flip Flops:            156  out of   9312     1%  
+ Number of 4 input LUTs:               3845  out of   9312    41%  
+ Number of IOs:                           9
+ Number of bonded IOBs:                   9  out of    232     3%  
+ Number of GCLKs:                         3  out of     24    12%  
+ Number of DCMs:                          1  out of      4    25%  
+
+---------------------------
+Partition Resource Summary:
+---------------------------
+
+  No Partitions were found in this design.
+
+---------------------------
+
+
+=========================================================================
+TIMING REPORT
+
+NOTE: THESE TIMING NUMBERS ARE ONLY A SYNTHESIS ESTIMATE.
+      FOR ACCURATE TIMING INFORMATION PLEASE REFER TO THE TRACE REPORT
+      GENERATED AFTER PLACE-and-ROUTE.
+
+Clock Information:
+------------------
+-----------------------------------+---------------------------+-------+
+Clock Signal                       | Clock buffer(FF name)     | Load  |
+-----------------------------------+---------------------------+-------+
+CLK                                | IBUFG+BUFG                | 37    |
+CLK                                | pixel_clock/DCM_inst:CLKFX| 119   |
+-----------------------------------+---------------------------+-------+
+
+Asynchronous Control Signals Information:
+----------------------------------------
+No asynchronous control signals found in this design
+
+Timing Summary:
+---------------
+Speed Grade: -4
+
+   Minimum period: 9.844ns (Maximum Frequency: 101.589MHz)
+   Minimum input arrival time before clock: 3.980ns
+   Maximum output required time after clock: 15.929ns
+   Maximum combinational path delay: No path found
+
+Timing Detail:
+--------------
+All values displayed in nanoseconds (ns)
+
+=========================================================================
+Timing constraint: Default period analysis for Clock 'CLK'
+  Clock period: 9.844ns (frequency: 101.589MHz)
+  Total number of paths / destination ports: 76010145 / 350
+-------------------------------------------------------------------------
+Delay:               19.687ns (Levels of Logic = 58)
+  Source:            display/U1/pos_y_1 (FF)
+  Destination:       display/U1/pos_x_8 (FF)
+  Source Clock:      CLK rising 0.5X
+  Destination Clock: CLK rising 0.5X
+
+  Data Path: display/U1/pos_y_1 to display/U1/pos_x_8
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDE:C->Q             26   0.591   1.435  display/U1/pos_y_1 (display/U1/pos_y_1)
+     LUT1:I0->O            1   0.704   0.000  display/U1/Madd_BLUE_0_add0003_cy<1>_rt (display/U1/Madd_BLUE_0_add0003_cy<1>_rt)
+     MUXCY:S->O            1   0.464   0.000  display/U1/Madd_BLUE_0_add0003_cy<1> (display/U1/Madd_BLUE_0_add0003_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<2> (display/U1/Madd_BLUE_0_add0003_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<3> (display/U1/Madd_BLUE_0_add0003_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<4> (display/U1/Madd_BLUE_0_add0003_cy<4>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<5> (display/U1/Madd_BLUE_0_add0003_cy<5>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<6> (display/U1/Madd_BLUE_0_add0003_cy<6>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<7> (display/U1/Madd_BLUE_0_add0003_cy<7>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<8> (display/U1/Madd_BLUE_0_add0003_cy<8>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<9> (display/U1/Madd_BLUE_0_add0003_cy<9>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<10> (display/U1/Madd_BLUE_0_add0003_cy<10>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<11> (display/U1/Madd_BLUE_0_add0003_cy<11>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<12> (display/U1/Madd_BLUE_0_add0003_cy<12>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<13> (display/U1/Madd_BLUE_0_add0003_cy<13>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<14> (display/U1/Madd_BLUE_0_add0003_cy<14>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<15> (display/U1/Madd_BLUE_0_add0003_cy<15>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<16> (display/U1/Madd_BLUE_0_add0003_cy<16>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<17> (display/U1/Madd_BLUE_0_add0003_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<18> (display/U1/Madd_BLUE_0_add0003_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<19> (display/U1/Madd_BLUE_0_add0003_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<20> (display/U1/Madd_BLUE_0_add0003_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<21> (display/U1/Madd_BLUE_0_add0003_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<22> (display/U1/Madd_BLUE_0_add0003_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<23> (display/U1/Madd_BLUE_0_add0003_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<24> (display/U1/Madd_BLUE_0_add0003_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<25> (display/U1/Madd_BLUE_0_add0003_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<26> (display/U1/Madd_BLUE_0_add0003_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Madd_BLUE_0_add0003_cy<27> (display/U1/Madd_BLUE_0_add0003_cy<27>)
+     XORCY:CI->O          26   0.804   1.260  display/U1/Madd_BLUE_0_add0003_xor<28> (display/U1/BLUE_0_add0003<28>)
+     INV:I->O              1   0.704   0.000  display/U1/Msub_result5_addsub0000_lut<28>_INV_0 (display/U1/Msub_result5_addsub0000_lut<28>)
+     MUXCY:S->O            1   0.464   0.000  display/U1/Msub_result5_addsub0000_cy<28> (display/U1/Msub_result5_addsub0000_cy<28>)
+     XORCY:CI->O          23   0.804   1.377  display/U1/Msub_result5_addsub0000_xor<29> (display/U1/result5_addsub0000<29>)
+     LUT2:I0->O            1   0.704   0.000  display/U1/Mcompar_result5_cmp_le0000_lut<11>2 (display/U1/Mcompar_result5_cmp_le0000_lut<11>2)
+     MUXCY:S->O            1   0.464   0.000  display/U1/Mcompar_result5_cmp_le0000_cy<11>_1 (display/U1/Mcompar_result5_cmp_le0000_cy<11>1)
+     MUXCY:CI->O           4   0.459   0.622  display/U1/Mcompar_result5_cmp_le0000_cy<12>_0 (display/U1/result5_cmp_le0017)
+     LUT3:I2->O            1   0.704   0.000  display/U1/pos_x_and0001_wg_lut<17> (display/U1/pos_x_and0001_wg_lut<17>)
+     MUXCY:S->O            1   0.464   0.000  display/U1/pos_x_and0001_wg_cy<17> (display/U1/pos_x_and0001_wg_cy<17>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<18> (display/U1/pos_x_and0001_wg_cy<18>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<19> (display/U1/pos_x_and0001_wg_cy<19>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<20> (display/U1/pos_x_and0001_wg_cy<20>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<21> (display/U1/pos_x_and0001_wg_cy<21>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<22> (display/U1/pos_x_and0001_wg_cy<22>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<23> (display/U1/pos_x_and0001_wg_cy<23>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<24> (display/U1/pos_x_and0001_wg_cy<24>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<25> (display/U1/pos_x_and0001_wg_cy<25>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<26> (display/U1/pos_x_and0001_wg_cy<26>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<27> (display/U1/pos_x_and0001_wg_cy<27>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<28> (display/U1/pos_x_and0001_wg_cy<28>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<29> (display/U1/pos_x_and0001_wg_cy<29>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<30> (display/U1/pos_x_and0001_wg_cy<30>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<31> (display/U1/pos_x_and0001_wg_cy<31>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<32> (display/U1/pos_x_and0001_wg_cy<32>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<33> (display/U1/pos_x_and0001_wg_cy<33>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/pos_x_and0001_wg_cy<34> (display/U1/pos_x_and0001_wg_cy<34>)
+     MUXCY:CI->O           2   0.459   0.451  display/U1/pos_x_and0001_wg_cy<35> (display/U1/pos_x_and0001)
+     LUT4_D:I3->O         31   0.704   1.297  display/U1/pos_x_mux0000<0>2 (display/U1/N4)
+     LUT4:I2->O            1   0.704   0.499  display/U1/pos_x_mux0000<8>_SW0 (N33)
+     LUT3:I1->O            1   0.704   0.000  display/U1/pos_x_mux0000<8> (display/U1/pos_x_mux0000<8>)
+     FDE:D                     0.308          display/U1/pos_x_8
+    ----------------------------------------
+    Total                     19.687ns (12.746ns logic, 6.942ns route)
+                                       (64.7% logic, 35.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET IN BEFORE for Clock 'CLK'
+  Total number of paths / destination ports: 3 / 3
+-------------------------------------------------------------------------
+Offset:              3.980ns (Levels of Logic = 4)
+  Source:            PS2_Data (PAD)
+  Destination:       U_KBD/ByteRdy (FF)
+  Destination Clock: CLK rising
+
+  Data Path: PS2_Data to U_KBD/ByteRdy
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     IBUF:I->O             2   1.218   0.622  PS2_Data_IBUF (PS2_Data_IBUF)
+     begin scope: 'U_KBD'
+     LUT2:I0->O            1   0.704   0.424  ByteRdy_and0000_SW0_SW0 (N6)
+     LUT4:I3->O            1   0.704   0.000  ByteRdy_and0000 (ByteRdy_and0000)
+     FDR:D                     0.308          ByteRdy
+    ----------------------------------------
+    Total                      3.980ns (2.934ns logic, 1.046ns route)
+                                       (73.7% logic, 26.3% route)
+
+=========================================================================
+Timing constraint: Default OFFSET OUT AFTER for Clock 'CLK'
+  Total number of paths / destination ports: 5500 / 5
+-------------------------------------------------------------------------
+Offset:              15.929ns (Levels of Logic = 14)
+  Source:            display/v_count_2 (FF)
+  Destination:       GREEN<0> (PAD)
+  Source Clock:      CLK rising 0.5X
+
+  Data Path: display/v_count_2 to GREEN<0>
+                                Gate     Net
+    Cell:in->out      fanout   Delay   Delay  Logical Name (Net Name)
+    ----------------------------------------  ------------
+     FDRE:C->Q            23   0.591   1.377  display/v_count_2 (display/v_count_2)
+     LUT4:I0->O            1   0.704   0.000  display/U1/Mcompar_result_cmp_le0000_lut<1> (display/U1/Mcompar_result_cmp_le0000_lut<1>)
+     MUXCY:S->O            1   0.464   0.000  display/U1/Mcompar_result_cmp_le0000_cy<1> (display/U1/Mcompar_result_cmp_le0000_cy<1>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Mcompar_result_cmp_le0000_cy<2> (display/U1/Mcompar_result_cmp_le0000_cy<2>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Mcompar_result_cmp_le0000_cy<3> (display/U1/Mcompar_result_cmp_le0000_cy<3>)
+     MUXCY:CI->O           1   0.059   0.000  display/U1/Mcompar_result_cmp_le0000_cy<4> (display/U1/Mcompar_result_cmp_le0000_cy<4>)
+     MUXCY:CI->O           1   0.459   0.455  display/U1/Mcompar_result_cmp_le0000_cy<5> (display/U1/result_cmp_le0015)
+     LUT3:I2->O            1   0.704   0.499  display/U1/result_mux0017807 (display/U1/result_mux0017807)
+     LUT4:I1->O            1   0.704   0.595  display/U1/result_mux0017821_SW0 (N181)
+     LUT4:I0->O            1   0.704   0.499  display/U1/result_mux0017821 (display/U1/result_mux0017821)
+     LUT3:I1->O            1   0.704   0.424  display/U1/result_mux00171196_SW0 (N185)
+     LUT4:I3->O            1   0.704   0.455  display/U1/result_mux00171196 (display/U1/result_mux00171196)
+     LUT4:I2->O            3   0.704   0.610  display/U1/result_mux00171389 (display/U1/result_mux0017)
+     LUT3:I1->O            1   0.704   0.420  display/U1/GREEN_0_mux00001 (GREEN_0_OBUF)
+     OBUF:I->O                 3.272          GREEN_0_OBUF (GREEN<0>)
+    ----------------------------------------
+    Total                     15.929ns (10.595ns logic, 5.334ns route)
+                                       (66.5% logic, 33.5% route)
+
+=========================================================================
+
+
+Total REAL time to Xst completion: 16.00 secs
+Total CPU time to Xst completion: 16.45 secs
+ 
+--> 
+
+Total memory usage is 4599040 kilobytes
+
+Number of errors   :    0 (   0 filtered)
+Number of warnings :    6 (   0 filtered)
+Number of infos    :    1 (   0 filtered)
+

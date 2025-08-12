@@ -1,0 +1,4 @@
+vhdl work "Image_Generator.vhd"
+vhdl work "pll.vhd"
+vhdl work "Maze_sync.vhd"
+vhdl work "Maze_m.vhd"

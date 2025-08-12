@@ -1,0 +1,51 @@
+V3 39
+FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" 2025/06/10.14:23:22 P.20131013
+EN work/Image_Generator 1749558205 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Image_Generator/Behavioral 1749558206 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" \
+      EN work/Image_Generator 1749558205
+FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" 2025/06/10.13:27:44 P.20131013
+EN work/Maze_m 1749558211 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" \
+      PB ieee/std_logic_1164 1381692176
+AR work/Maze_m/Behavioral 1749558212 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" \
+      EN work/Maze_m 1749558211 CP pll CP work/Maze_sync CP PS2_Kbd
+FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" 2025/06/10.13:27:44 P.20131013
+EN work/Maze_sync 1749558209 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" \
+      PB ieee/std_logic_1164 1381692176 PB ieee/std_logic_arith 1381692177 \
+      PB ieee/STD_LOGIC_UNSIGNED 1381692179
+AR work/Maze_sync/Behavioral 1749558210 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" \
+      EN work/Maze_sync 1749558209 CP work/Image_Generator
+FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" 2025/06/10.13:27:44 P.20131013
+EN work/pll 1749558207 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" \
+      PB ieee/std_logic_1164 1381692176 LB UNISIM PH unisim/VCOMPONENTS 1381692182
+AR work/pll/BEHAVIORAL 1749558208 \
+      FL "D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" \
+      EN work/pll 1749558207 CP DCM CP BUFG
+FL "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" 2025/05/06.14:29:10 P.20131013
+FL "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" 2025/05/05.21:23:14 P.20131013
+FL "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" 2025/05/06.14:29:14 P.20131013
+FL "D:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" 2025/05/05.21:17:32 P.20131013
+FL E:/Maze/Image_Generator.vhd 2025/04/08.15:11:42 P.20131013
+FL E:/Maze/Maze_m.vhd 2025/04/08.14:27:50 P.20131013
+FL E:/Maze/Maze_sync.vhd 2025/04/08.15:12:06 P.20131013
+FL E:/Maze/pll.vhd 2025/03/25.12:05:48 P.20131013
+FL F:/Maze/Image_Generator.vhd 2025/03/25.12:43:10 P.20131013
+FL F:/Maze/Maze_m.vhd 2025/03/25.14:00:44 P.20131013
+FL F:/Maze/Maze_sync.vhd 2025/03/25.14:20:58 P.20131013
+FL F:/Maze/pll.vhd 2025/03/25.12:05:48 P.20131013
+FL "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Image_Generator.vhd" 2025/05/05.21:35:30 P.20131013
+FL "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd" 2025/05/05.21:23:14 P.20131013
+FL "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_sync.vhd" 2025/05/05.21:35:28 P.20131013
+FL "H:/Kopia test aktualne 1/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/pll.vhd" 2025/05/05.21:17:32 P.20131013
+FL H:/Maze/Image_Generator.vhd 2025/05/05.21:17:38 P.20131013
+FL H:/Maze/Maze_m.vhd 2025/05/05.21:23:14 P.20131013
+FL H:/Maze/Maze_sync.vhd 2025/05/05.20:41:02 P.20131013
+FL H:/Maze/pll.vhd 2025/05/05.21:17:32 P.20131013

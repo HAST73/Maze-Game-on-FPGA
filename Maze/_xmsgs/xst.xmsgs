@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- IMPORTANT: This is an internal file that has been generated
+     by the Xilinx ISE software.  Any direct editing or
+     changes made to this file may result in unpredictable
+     behavior or data corruption.  It is strongly advised that
+     users do not edit the contents of this file. -->
+<messages>
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd</arg>&quot; line <arg fmt="%d" index="2">82</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">LED0</arg>&apos; of component &apos;<arg fmt="%s" index="4">Maze_sync</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">E0</arg>&apos; of component &apos;<arg fmt="%s" index="4">PS2_Kbd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="753" delta="old" >&quot;<arg fmt="%s" index="1">D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Unconnected output port &apos;<arg fmt="%s" index="3">F0</arg>&apos; of component &apos;<arg fmt="%s" index="4">PS2_Kbd</arg>&apos;.
+</msg>
+
+<msg type="warning" file="Xst" num="2211" delta="old" >&quot;<arg fmt="%s" index="1">D:/10_06_2025 projekt/Maze - dziala aktualne - prostokat czarny na bialym tle 05-05-2025/Maze_m.vhd</arg>&quot; line <arg fmt="%d" index="2">98</arg>: Instantiating black box module &lt;<arg fmt="%s" index="3">PS2_Kbd</arg>&gt;.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">goal_reached_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">U1</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="warning" file="Xst" num="1426" delta="old" >The value init of the FF/Latch <arg fmt="%s" index="1">goal_reached_0</arg> hinder the constant cleaning in the block <arg fmt="%s" index="2">Image_Generator</arg>.
+You should achieve better results by setting this init to <arg fmt="%i" index="3">1</arg>.
+</msg>
+
+<msg type="info" file="Xst" num="1901" delta="old" >Instance <arg fmt="%s" index="1">pixel_clock/DCM_inst</arg> in unit <arg fmt="%s" index="2">Maze_m</arg> of type <arg fmt="%s" index="3">DCM</arg> has been replaced by <arg fmt="%s" index="4">DCM_SP</arg>
+</msg>
+
+</messages>
+
