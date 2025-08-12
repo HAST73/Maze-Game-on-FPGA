@@ -1,4 +1,4 @@
-# 🧩 Maze Game – FPGA Implementation
+# 🧩 Maze Game on FPGA
 
 ## 📌 Overview
 **Maze Game** is an FPGA-based interactive project implemented on a **Xilinx Spartan-3E** board.  
